@@ -10,11 +10,16 @@
     <header>
         <h1>Victoria Di Liscia</h1>
         <img src="profilePic.png" alt="Foto de perfil" loading="lazy">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/250px-React.svg.png" alt="Logo de React" loading="lazy">
+        <img height="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/250px-React.svg.png" alt="Logo de React" loading="lazy">
         <nav>
             <ul>
                 <!-- Este es un comentario, no es visible por el usuario-->
                 <!-- Un elemento puede tener mas de una clase y puede tener un id y clases. -->
+                <li id="contact-form-nav" class="nav-items link"> 
+                    <a href="#contact-form">
+                        Contacto
+                    </a>
+                </li>
                 <li id="about-me-nav" class="nav-items link"> 
                     <a href="#about-me">
                         Sobre Mi
@@ -49,6 +54,61 @@
         </nav>
     </header>
     <main>
+        <section id="contact-form"> 
+            <h1>Contacto:</h1>
+            <form method="post" action="">
+                <!--Vamos a evitar usar br en general pero lo ponemos en este caso para separar los inputs en distintas lineas -->
+                <label for="name">Nombre:</label>
+                <input maxlength="10" required type="text" placeholder="Ingresa tu nombre completo" id="name">
+                <br>
+                <label for="email">Email</label>
+                <input required type="email" placeholder="Ej: juan@email.com" id="email">
+                <br>
+                <label for="password">Contraseña</label>
+                <input required type="password" placeholder="Ingrese contraseña con letras y numeros" id="password">
+                <br>
+                <label for="age">Edad:</label>
+                <input max="100" type="number" id="age">
+                <br>
+                <label for="color">Color de Texto</label>
+                <input type="color" id="color">
+                <br>
+                <label for="message">Mensaje</label>
+                <textarea id="message" placeholder="Ingrese su mensaje">
+                </textarea>
+                <br>
+                <label for="subscribe">Suscribirse al newsletter</label>
+                <input type="checkbox" checked id="subscribe">
+
+                <br>
+                <label for="role">
+                    ¿Cuál es su rol?
+                </label>
+                <select name="role" id="role">
+                    <option value="developer">Developer</option>
+                    <option value="projectManager">Project Manager</option>
+                    <option value="recruiter">Recruiter</option>
+                    <option value="architect">Architect</option>
+                </select>
+
+                <fieldset>
+                    <legend>Cual es su Seniority?</legend>
+                    
+                    <label for="junior">Jr</label>
+                    <input name="seniority" type="radio" id="junior" value="junior">
+                    
+                    <label for="semisenior">Ssr</label>
+                    <input name="seniority" type="radio" id="semisenior" value="semisenior">
+                    
+                    <label for="senior">Sr</label>
+                    <input name="seniority" type="radio" id="senior" value="senior">
+
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+                
+            </form>
+        </section>
         <section id="about-me">
             <h2>Sobre Mi</h2>
             <p>
@@ -68,31 +128,18 @@
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores soluta ipsam ipsa voluptate animi in sed rerum reprehenderit quod odio unde, a et expedita at porro exercitationem iste. Deserunt, impedit.
             </p>
         </section>
+
         <section id="skills">
             <h2>
                 Skills
             </h2>
             <dl>
                 <dt>Front End</dt>
-                <dd>Lenguajes y Frameworks</dd>
-                <li>
-                    HTML
-                </li>
-                <li>
-                    CSS
-                </li>
-                <li>
-                    Javascript
-                </li>
-                <li>
-                    React
-                </li>
+                    <dd>Tecnologias de desarrollo WEB Client Side</dd>
                 <dt>Back End</dt>
-                <dd>Lenguajes de Back</dd>
-                <li>Node</li>
-                <li>Express</li>
-                <li>Python</li>
-                <li>Php</li>
+                    <dd>Tecnologias de desarrollo de APIs y manejo de base de datos</dd>
+                <dt>DevOps</dt>
+                    <dd>deploy</dd>
             </dl>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum porro aspernatur atque itaque earum? Quo recusandae id magnam assumenda culpa quisquam laborum, quidem deserunt temporibus, ut facilis tempore in?
@@ -166,11 +213,19 @@
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores soluta ipsam ipsa voluptate animi in sed rerum reprehenderit quod odio unde, a et expedita at porro exercitationem iste. Deserunt, impedit.
             </p>
         </section>
+        <section>
+            <div>
+                <span>Esto es una seccion</span>
+            </div>
+        </section>
     </main>  
     <footer>
         <h3>Redes Sociales</h3>
         <a href="https://github.com/missvico" target="_blank">Github</a>
         <a href="https://www.linkedin.com/vicodiliscia?_l=en_US" target="_blank">LinkedIn</a>
+        <a href="https://facebook.com" target="_blank">
+            <img height="100" src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Link a Facebook" loading="lazy">
+        </a>
     </footer>    
 </body>
 </html>

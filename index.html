@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Primera Webpage</title>
+    <!-- Estilo en el HEAD - NO ES ESCALABLE -->
+    <!-- <style>
+        * {
+            color: red;
+        }
+    </style> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Victoria Di Liscia</h1>
-        <img src="profilePic.png" alt="Foto de perfil" loading="lazy">
-        <img height="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/250px-React.svg.png" alt="Logo de React" loading="lazy">
+        <h1 class="sectionTitles" id="profileName"><span id="firstLetter">V</span>ictoria Di Liscia</h1>
         <nav>
             <ul>
                 <!-- Este es un comentario, no es visible por el usuario-->
@@ -52,30 +57,40 @@
                 </li>
             </ul>
         </nav>
+        <img src="profilePic.png" alt="Foto de perfil" loading="lazy">
+        <img height="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/250px-React.svg.png" alt="Logo de React" loading="lazy">
+        <div id="textStyles">
+            <h1>Estilo de Texto</h1>
+            <p id="p1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, perferendis similique distinctio officiis perspiciatis magnam! Quae ipsam aspernatur aut exercitationem fuga ut saepe veniam odio? Beatae molestiae quibusdam enim aperiam?
+            </p>
+            <p id="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate qui quis, laudantium voluptates fuga non vero? Beatae harum, omnis perferendis voluptatem ab quia dignissimos laudantium? Neque nostrum laboriosam exercitationem libero?</p>
+            <p id="p3"> ESTE TEXTO ESTA JUSTIFICADO = Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate qui quis, laudantium voluptates fuga non vero? Beatae harum, omnis perferendis voluptatem ab quia dignissimos laudantium? Neque nostrum laboriosam exercitationem libero?</p>
+        </div>
     </header>
     <main>
         <section id="about-me">
-            <h2>Sobre Mi</h2>
+            <h2 class="sectionTitles" >Sobre Mi</h2>
             <p>
                 Soy Licenciada en Economía y promediando la carrera tomé un curso introductorio a la programación como complemento a mis estudios. En el proceso, encontré en el desarrollo web un espacio excelente para aprovechar mis capacidades analíticas y desarrollarme profesionalmente. Para potenciar mis oportunidades, realicé un Coding Bootcamp que me permitió profundizar mi conocimiento técnico. Además, pude integrar el conocimiento adquirido a mi experiencia docente, reavivando mi interés en la enseñanza desde un nuevo lugar.
             </p>
         </section>
         <section id="education">
-            <h2>
+            <h2 class="sectionTitles" >
                 Educacion
             </h2>
-            <p>
+            <p class="educationInfo">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum porro aspernatur atque itaque earum? Quo recusandae id magnam assumenda culpa quisquam laborum, quidem deserunt temporibus, ut facilis tempore in?
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores soluta ipsam ipsa voluptate animi in sed rerum reprehenderit quod odio unde, a et expedita at porro exercitationem iste. Deserunt, impedit.
             </p>
-            <p>
+            <p class="educationInfo">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum porro aspernatur atque itaque earum? Quo recusandae id magnam assumenda culpa quisquam laborum, quidem deserunt temporibus, ut facilis tempore in?
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores soluta ipsam ipsa voluptate animi in sed rerum reprehenderit quod odio unde, a et expedita at porro exercitationem iste. Deserunt, impedit.
             </p>
         </section>
 
         <section id="skills">
-            <h2>
+            <h2 class="sectionTitles" >
                 Skills
             </h2>
             <dl>
@@ -104,7 +119,7 @@
             </p>
         </section>
         <section id="experience">
-            <h2>
+            <h2 class="sectionTitles" >
                 Experiencia
             </h2>
             <ol>
@@ -133,7 +148,7 @@
             </p>
         </section>
         <section id="portfolio">
-            <h2>
+            <h2 class="sectionTitles" >
                 Portfaolio
             </h2>
             <p>
@@ -147,11 +162,14 @@
         </section>
         <h1 style="font-size:xx-large;color:blueviolet">CLASE DOS</h1>
         <section id="contact-form"> 
-            <h1>Contacto:</h1>
+            <h1 class="sectionTitles" >Contacto:</h1>
             <form method="post" action="">
                 <!--Vamos a evitar usar br en general pero lo ponemos en este caso para separar los inputs en distintas lineas -->
                 <label for="name">Nombre:</label>
-                <input maxlength="10" required type="text" placeholder="Ingresa tu nombre completo" id="name">
+                <input maxlength="10" required type="text" placeholder="Ej: Juan" id="name">
+                <br>
+                <label for="surname">Apellido:</label>
+                <input maxlength="40" required type="text" placeholder="Ej: Perez " id="surname">
                 <br>
                 <label for="email">Email</label>
                 <input required type="email" placeholder="Ej: juan@email.com" id="email">
@@ -202,7 +220,7 @@
             </form>
         </section>
         <section>
-            <h1>Tablas</h1>
+            <h1 class="sectionTitles" >Tablas</h1>
             <table>
                 <tr>
                     <th>
@@ -240,7 +258,7 @@
             </table>
         </section>
         <section id="volunteer">
-            <h2>
+            <h2 class="sectionTitles" >
                 Voluntariado
             </h2>
             <p>
@@ -263,7 +281,7 @@
         </section>
     </main>  
     <footer>
-        <h3>Redes Sociales</h3>
+        <h3 class="sectionTitles" >Redes Sociales</h3>
         <a href="https://github.com/missvico" target="_blank">Github</a>
         <a href="https://www.linkedin.com/vicodiliscia?_l=en_US" target="_blank">LinkedIn</a>
         <a href="https://facebook.com" target="_blank">

@@ -1,0 +1,44 @@
+.firstP {
+    margin: 0 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#secondP {
+    background-color: yellow;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    background-color: lightskyblue;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+#thirdP{
+    background-color: rgb(132, 221, 0);
+    color: yellow;
+    border: solid 2px black;
+}
+
+#fourthP {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(214, 84, 33);
+    text-decoration: underline dotted;
+    font-style: italic;
+    word-spacing: 10px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.fifthP {
+    color: white;
+    background-color: rgb(216, 132, 216);
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    line-height: 25px;
+}
